@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: Login Positive
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 8.63 s <<< FAILURE! - in Scenario: Login Positive
+Scenario: Login Positive.When I input username "Admin"  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.NullPointerException
+
+Scenario: Login Positive  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.NullPointerException
+

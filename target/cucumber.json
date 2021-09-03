@@ -1,0 +1,186 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8399928400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Valid Username and Password",
+        "description": "",
+        "id": "login;valid-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 928915600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 840346400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User open the Orange HRM home page",
+            "match": {
+              "location": "LoginPageSteps.openOrangeHRMPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3945993100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User input username \"Admin\" and password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 21
+                },
+                {
+                  "val": "admin123",
+                  "offset": 42
+                }
+              ],
+              "location": "LoginPageSteps.LoginPositive(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66454000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User see the dashboard",
+            "match": {
+              "location": "LoginPageSteps.verifyDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6458412300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Invalid username and password",
+        "description": "",
+        "id": "login;invalid-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 891461000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 381842300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User open the Orange HRM home page",
+            "match": {
+              "location": "LoginPageSteps.openOrangeHRMPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1631587900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User input invalid username \"admin\" and password \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 29
+                },
+                {
+                  "val": "admin",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginPageSteps.LoginNegative(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80774400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User see error message",
+            "match": {
+              "location": "LoginPageSteps.InvalidCredentials()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@tag2"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "User want to Login OrangeHRM",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "feature/Login.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@Login"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: Login
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 2, Time elapsed: 10.257 s <<< FAILURE! - in Scenario: Login
+Scenario: Login.When I input username "Admin"  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.NullPointerException
+
+Scenario: Login  Time elapsed: 0.022 s  <<< ERROR!
+java.lang.NullPointerException
+
