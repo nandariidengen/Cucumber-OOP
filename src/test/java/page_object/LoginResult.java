@@ -31,13 +31,13 @@ public class LoginResult extends baseClass {
 	}
 
 	public String verifyMessage() {
-		webdriver.getPageSource().contains("Invalid credentials");
+//		webdriver.getPageSource().contains("Invalid credentials");
 		return errorMessage.getText();
 	}
 
-	public boolean isDisplayed() {
-		wait(welcome);
-		wait(errorMessage);
-		return true;
-	}
+//	public boolean isDisplayed() {
+//		wait(welcome);
+//		wait(errorMessage);
+//		return true;
+//	}
 }

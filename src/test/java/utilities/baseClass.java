@@ -17,7 +17,7 @@ public class baseClass {
 	
 	public baseClass(WebDriver webdriver) {
 		baseClass.webdriver = webdriver;
-		wait = new WebDriverWait(webdriver, 15);
+		wait = new WebDriverWait(webdriver, 10);
 		wait.ignoring(WebDriverException.class);
 		wait.ignoring(StaleElementReferenceException.class);
 	}

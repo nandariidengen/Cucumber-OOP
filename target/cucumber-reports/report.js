@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 8399928400,
+  "duration": 7038522300,
   "status": "passed"
 });
 formatter.scenario({
@@ -49,7 +49,7 @@ formatter.match({
   "location": "LoginPageSteps.openOrangeHRMPage()"
 });
 formatter.result({
-  "duration": 840346400,
+  "duration": 773518300,
   "status": "passed"
 });
 formatter.match({
@@ -66,22 +66,22 @@ formatter.match({
   "location": "LoginPageSteps.LoginPositive(String,String)"
 });
 formatter.result({
-  "duration": 3945993100,
+  "duration": 3861508600,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageSteps.verifyDashboard()"
 });
 formatter.result({
-  "duration": 66454000,
+  "duration": 62411800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 928915600,
+  "duration": 969699000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6458412300,
+  "duration": 4976022400,
   "status": "passed"
 });
 formatter.scenario({
@@ -117,7 +117,7 @@ formatter.match({
   "location": "LoginPageSteps.openOrangeHRMPage()"
 });
 formatter.result({
-  "duration": 381842300,
+  "duration": 379370100,
   "status": "passed"
 });
 formatter.match({
@@ -134,18 +134,18 @@ formatter.match({
   "location": "LoginPageSteps.LoginNegative(String,String)"
 });
 formatter.result({
-  "duration": 1631587900,
+  "duration": 1355072200,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginPageSteps.InvalidCredentials()"
 });
 formatter.result({
-  "duration": 80774400,
+  "duration": 55622800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 891461000,
+  "duration": 903124700,
   "status": "passed"
 });
 });

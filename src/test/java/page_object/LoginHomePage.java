@@ -11,6 +11,8 @@ public class LoginHomePage extends baseClass {
 
 	public LoginHomePage(WebDriver webdriver) {
 		super(webdriver);
+		//initElement berguna ketika class Login dipanggil langsung menginisialisasikan
+		//semua attribute yang ada dibawahnya
 		PageFactory.initElements(webdriver, this);
 	}
 
@@ -43,5 +45,12 @@ public class LoginHomePage extends baseClass {
 		wait(btnLogin);
 		return true;
 	}
+	
+//setCredentials = digabungkan username, password, dan click
+//	public void setCredential(String username, String password) {
+//		usernameBox.sendKeys(username);
+//		passwordBox.sendKeys(password);
+//		btnLogin.click();
+//	}
 
 }
