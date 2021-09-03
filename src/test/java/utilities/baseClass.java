@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class baseClass {
+public class BaseClass {
 	public static WebDriver webdriver;
 	public static WebDriverWait wait;
 
@@ -15,8 +15,8 @@ public class baseClass {
 		wait.until(ExpectedConditions.elementToBeClickable(webElement));
 	}
 	
-	public baseClass(WebDriver webdriver) {
-		baseClass.webdriver = webdriver;
+	public BaseClass(WebDriver webdriver) {
+		BaseClass.webdriver = webdriver;
 		wait = new WebDriverWait(webdriver, 10);
 		wait.ignoring(WebDriverException.class);
 		wait.ignoring(StaleElementReferenceException.class);

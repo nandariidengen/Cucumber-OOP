@@ -1,7 +1,11 @@
 C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\step_definition\LoginPageSteps.java
-C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\utilities\baseClass.java
-C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\step_definition\runCukesTest.java
-C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\page_object\LoginResult.java
+C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\utilities\BaseClass.java
+C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\page_object\EmployeeDetailPage.java
+C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\step_definition\RunCukesTest.java
+C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\page_object\DashboardPage.java
+C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\page_object\EmployeeListPage.java
+C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\step_definition\AddEmployeeSteps.java
 C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\com\sekolahqa\cucumber\OrangeHRM\AppTest.java
-C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\step_definition\hooks.java
+C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\page_object\AddEmployeePage.java
+C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\step_definition\Hooks.java
 C:\Users\user\eclipse-workspace\Cucumber-OOP\src\test\java\page_object\LoginHomePage.java

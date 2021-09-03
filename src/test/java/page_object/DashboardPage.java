@@ -11,28 +11,35 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utilities.baseClass;
+import utilities.BaseClass;
 
-public class LoginResult extends baseClass {
+public class DashboardPage extends BaseClass {
 
-	public LoginResult(WebDriver webdriver) {
+	public DashboardPage(WebDriver webdriver) {
 		super(webdriver);
 		PageFactory.initElements(webdriver, this);
 	}
 
 	@FindBy(id = "welcome")
-	WebElement welcome;
+	private WebElement welcome;
 
 	@FindBy(id = "spanMessage")
-	WebElement errorMessage;
+	private WebElement errorMessage;
+	
+	@FindBy(xpath = "//b[.='PIM']")
+	private WebElement pim;
 
 	public String verifyDashboard() {
 		return welcome.getText();
 	}
 
-	public String verifyMessage() {
+	public String errorMessage() {
 //		webdriver.getPageSource().contains("Invalid credentials");
 		return errorMessage.getText();
+	}
+	
+	public void clickPIM() {
+		pim.click();
 	}
 
 //	public boolean isDisplayed() {

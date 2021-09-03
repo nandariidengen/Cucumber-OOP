@@ -12,7 +12,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
 import page_object.LoginHomePage;
-import page_object.LoginResult;
+import page_object.DashboardPage;
 
 @SuppressWarnings("deprecation")
 public class LoginPageSteps {
@@ -20,15 +20,16 @@ public class LoginPageSteps {
 
 	public LoginPageSteps() {
 		super();
-		this.webdriver = hooks.webdriver;
+		this.webdriver = Hooks.webdriver;
 	}
 
 	@Given("User open the Orange HRM home page")
-	public void openOrangeHRMPage() {
+	public void OrangeHRMPage() {
 		LoginHomePage loginHP = new LoginHomePage(webdriver);
 		assertTrue(loginHP.isDisplayed());
 	}
-
+	
+	//webdriver = untuk memanggil driver google chrome
 	@When("User input username \"(.*)\" and password \"(.*)\"")
 	public void LoginPositive(String username, String password) throws Throwable {
 		LoginHomePage loginHP = new LoginHomePage(webdriver);
@@ -39,7 +40,7 @@ public class LoginPageSteps {
 
 	@Then("User see the dashboard")
 	public void verifyDashboard() throws Throwable {
-		LoginResult loginResult = new LoginResult(webdriver);
+		DashboardPage loginResult = new DashboardPage(webdriver);
 		loginResult.verifyDashboard();
 		System.out.println("Login Positive Passed");
 	}
@@ -54,8 +55,8 @@ public class LoginPageSteps {
 
 	@Then("User see error message")
 	public void InvalidCredentials() throws Throwable {
-		LoginResult loginResult = new LoginResult(webdriver);
-		loginResult.verifyMessage();
+		DashboardPage loginResult = new DashboardPage(webdriver);
+		loginResult.errorMessage();
 //		assertTrue(loginResult.isDisplayed());
 		System.out.println("Login Negative Passed");
 	}

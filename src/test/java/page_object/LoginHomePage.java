@@ -5,17 +5,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utilities.baseClass;
+import utilities.BaseClass;
 
-public class LoginHomePage extends baseClass {
-
+public class LoginHomePage extends BaseClass {
+	
 	public LoginHomePage(WebDriver webdriver) {
 		super(webdriver);
 		//initElement berguna ketika class Login dipanggil langsung menginisialisasikan
 		//semua attribute yang ada dibawahnya
+		//Buat isi variabel dari FindBy
+		//webdriver = mendefinisikan webdriver yg ada di homepage
+		//this = class loginHomepage
 		PageFactory.initElements(webdriver, this);
 	}
 
+	
 	@FindBy(id = "txtUsername")
 	WebElement usernameBox;
 

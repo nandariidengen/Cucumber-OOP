@@ -1,31 +1,31 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 7038522300,
+              "duration": 9387149300,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.openBrowser()"
+              "location": "Hooks.openBrowser()"
             }
           }
         ],
-        "line": 7,
-        "name": "Valid Username and Password",
+        "line": 6,
+        "name": "Add Employee with valid data",
         "description": "",
-        "id": "login;valid-username-and-password",
+        "id": "add-employee;add-employee-with-valid-data",
         "after": [
           {
             "result": {
-              "duration": 969699000,
+              "duration": 172800,
               "status": "passed"
             },
             "match": {
-              "location": "hooks.embedScreenshot(Scenario)"
+              "location": "Hooks.embedScreenshot(Scenario)"
             }
           }
         ],
@@ -34,152 +34,118 @@
         "steps": [
           {
             "result": {
-              "duration": 773518300,
+              "duration": 5963976600,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User open the Orange HRM home page",
-            "match": {
-              "location": "LoginPageSteps.openOrangeHRMPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3861508600,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User input username \"Admin\" and password \"admin123\"",
+            "line": 7,
+            "name": "User already login with \"Admin\" as username and \"admin123\" as password",
             "match": {
               "arguments": [
                 {
                   "val": "Admin",
-                  "offset": 21
+                  "offset": 25
                 },
                 {
                   "val": "admin123",
-                  "offset": 42
+                  "offset": 49
                 }
               ],
-              "location": "LoginPageSteps.LoginPositive(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 62411800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User see the dashboard",
-            "match": {
-              "location": "LoginPageSteps.verifyDashboard()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 6,
-            "name": "@tag1"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 4976022400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.openBrowser()"
-            }
-          }
-        ],
-        "line": 13,
-        "name": "Invalid username and password",
-        "description": "",
-        "id": "login;invalid-username-and-password",
-        "after": [
-          {
-            "result": {
-              "duration": 903124700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "hooks.embedScreenshot(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 379370100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User open the Orange HRM home page",
-            "match": {
-              "location": "LoginPageSteps.openOrangeHRMPage()"
+              "location": "AddEmployeeSteps.loginOrangeHRM(String,String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1355072200,
+              "duration": 3289936100,
               "status": "passed"
             },
-            "line": 15,
-            "name": "User input invalid username \"admin\" and password \"admin\"",
+            "line": 8,
+            "name": "User open the add employee page",
             "match": {
-              "arguments": [
-                {
-                  "val": "admin",
-                  "offset": 29
-                },
-                {
-                  "val": "admin",
-                  "offset": 50
-                }
-              ],
-              "location": "LoginPageSteps.LoginNegative(String,String)"
+              "location": "AddEmployeeSteps.openAddEmployee()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 55622800,
+              "duration": 621167700,
               "status": "passed"
             },
-            "line": 16,
-            "name": "User see error message",
+            "line": 9,
+            "name": "User input \"Nanda\" as first Name, \"Nandari\" as middle Name and \"Christin\" as last Name",
             "match": {
-              "location": "LoginPageSteps.InvalidCredentials()"
+              "arguments": [
+                {
+                  "val": "Nanda",
+                  "offset": 12
+                },
+                {
+                  "val": "Nandari",
+                  "offset": 35
+                },
+                {
+                  "val": "Christin",
+                  "offset": 64
+                }
+              ],
+              "location": "AddEmployeeSteps.nameEmployee(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5332472800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User upload photo \"worship.png\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "worship.png",
+                  "offset": 19
+                }
+              ],
+              "location": "AddEmployeeSteps.uploadPhoto(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131440800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User \"Nanda Nandari Christin\" already created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nanda Nandari Christin",
+                  "offset": 6
+                }
+              ],
+              "location": "AddEmployeeSteps.created(String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 12,
-            "name": "@tag2"
+            "line": 5,
+            "name": "@PositiveCase"
           }
         ]
       }
     ],
-    "name": "Login",
-    "description": "User want to Login OrangeHRM",
-    "id": "login",
+    "name": "Add Employee",
+    "description": "User want to add employee",
+    "id": "add-employee",
     "keyword": "Feature",
-    "uri": "feature/Login.feature",
+    "uri": "feature/AddEmployee.feature",
     "tags": [
       {
-        "line": 2,
-        "name": "@Login"
+        "line": 1,
+        "name": "@AddEmployee"
       }
     ]
   }

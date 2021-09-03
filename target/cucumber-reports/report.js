@@ -1,151 +1,133 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("feature/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("feature/AddEmployee.feature");
 formatter.feature({
-  "line": 3,
-  "name": "Login",
-  "description": "User want to Login OrangeHRM",
-  "id": "login",
+  "line": 2,
+  "name": "Add Employee",
+  "description": "User want to add employee",
+  "id": "add-employee",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 2,
-      "name": "@Login"
+      "line": 1,
+      "name": "@AddEmployee"
     }
   ]
 });
 formatter.before({
-  "duration": 7038522300,
+  "duration": 9387149300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 7,
-  "name": "Valid Username and Password",
+  "line": 6,
+  "name": "Add Employee with valid data",
   "description": "",
-  "id": "login;valid-username-and-password",
+  "id": "add-employee;add-employee-with-valid-data",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 6,
-      "name": "@tag1"
+      "line": 5,
+      "name": "@PositiveCase"
     }
   ]
 });
 formatter.step({
-  "line": 8,
-  "name": "User open the Orange HRM home page",
+  "line": 7,
+  "name": "User already login with \"Admin\" as username and \"admin123\" as password",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
-  "name": "User input username \"Admin\" and password \"admin123\"",
+  "line": 8,
+  "name": "User open the add employee page",
   "keyword": "When "
 });
 formatter.step({
+  "line": 9,
+  "name": "User input \"Nanda\" as first Name, \"Nandari\" as middle Name and \"Christin\" as last Name",
+  "keyword": "And "
+});
+formatter.step({
   "line": 10,
-  "name": "User see the dashboard",
+  "name": "User upload photo \"worship.png\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "User \"Nanda Nandari Christin\" already created",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginPageSteps.openOrangeHRMPage()"
-});
-formatter.result({
-  "duration": 773518300,
-  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Admin",
-      "offset": 21
+      "offset": 25
     },
     {
       "val": "admin123",
-      "offset": 42
+      "offset": 49
     }
   ],
-  "location": "LoginPageSteps.LoginPositive(String,String)"
+  "location": "AddEmployeeSteps.loginOrangeHRM(String,String)"
 });
 formatter.result({
-  "duration": 3861508600,
+  "duration": 5963976600,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPageSteps.verifyDashboard()"
+  "location": "AddEmployeeSteps.openAddEmployee()"
 });
 formatter.result({
-  "duration": 62411800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 969699000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 4976022400,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 13,
-  "name": "Invalid username and password",
-  "description": "",
-  "id": "login;invalid-username-and-password",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 12,
-      "name": "@tag2"
-    }
-  ]
-});
-formatter.step({
-  "line": 14,
-  "name": "User open the Orange HRM home page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "User input invalid username \"admin\" and password \"admin\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 16,
-  "name": "User see error message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginPageSteps.openOrangeHRMPage()"
-});
-formatter.result({
-  "duration": 379370100,
+  "duration": 3289936100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "admin",
-      "offset": 29
+      "val": "Nanda",
+      "offset": 12
     },
     {
-      "val": "admin",
-      "offset": 50
+      "val": "Nandari",
+      "offset": 35
+    },
+    {
+      "val": "Christin",
+      "offset": 64
     }
   ],
-  "location": "LoginPageSteps.LoginNegative(String,String)"
+  "location": "AddEmployeeSteps.nameEmployee(String,String,String)"
 });
 formatter.result({
-  "duration": 1355072200,
+  "duration": 621167700,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginPageSteps.InvalidCredentials()"
+  "arguments": [
+    {
+      "val": "worship.png",
+      "offset": 19
+    }
+  ],
+  "location": "AddEmployeeSteps.uploadPhoto(String)"
 });
 formatter.result({
-  "duration": 55622800,
+  "duration": 5332472800,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Nanda Nandari Christin",
+      "offset": 6
+    }
+  ],
+  "location": "AddEmployeeSteps.created(String)"
+});
+formatter.result({
+  "duration": 131440800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 903124700,
+  "duration": 172800,
   "status": "passed"
 });
 });

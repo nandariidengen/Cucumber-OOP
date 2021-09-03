@@ -11,7 +11,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class hooks {
+public class Hooks {
 	public static WebDriver webdriver;
 
 	@Before
@@ -40,7 +40,7 @@ public class hooks {
 			}
 
 		}
-		webdriver.quit();
+//		webdriver.quit();
 
 	}
 }

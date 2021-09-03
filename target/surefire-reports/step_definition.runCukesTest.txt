@@ -1,7 +1,8 @@
 -------------------------------------------------------------------------------
-Test set: step_definition.runCukesTest
+Test set: step_definition.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in step_definition.runCukesTest
-step_definition.runCukesTest.initializationError  Time elapsed: 0 s  <<< ERROR!
-cucumber.runtime.DuplicateStepDefinitionException: Duplicate step definitions in step_definition.LoginPageSteps.openPage() in file:/C:/Users/user/eclipse-workspace/Cucumber-OOP/target/test-classes/ and step_definition.LoginPageSteps.openOrangeHRMPage() in file:/C:/Users/user/eclipse-workspace/Cucumber-OOP/target/test-classes/
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 s <<< FAILURE! - in step_definition.RunCukesTest
+step_definition.RunCukesTest.initializationError  Time elapsed: 0 s  <<< ERROR!
+cucumber.runtime.CucumberException: Error parsing feature file feature/AddEmployee.feature
+Caused by: gherkin.parser.ParseError: Parse error at feature/AddEmployee.feature:6. Found comment when expecting one of: examples, feature, scenario, scenario_outline, tag. (Current getState: tag).
 
